@@ -9,13 +9,13 @@ searchBtn.addEventListener('click',(e) => {
         .then(data => {
             //console.log(data);
             
-            if( data.message == 'Not Found'){
-             ui.showAlert("User not found!", "alert alert-danger");
+            if( data.message == 'not found'){
+            // ui.showAlert("User not found!", "alert alert-danger");
             }else{
              ui.showprofile(data);
             }
         })
     }else{
-            ui.clearprofile();
+           // ui.clearprofile();
     }
 });
