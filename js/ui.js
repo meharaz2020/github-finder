@@ -31,5 +31,24 @@ showprofile(user){
     </div>
     </div>`;
 }
+clearprofile(){
+    this.profile.innerHTML = "";
+
+}
+showAlert(message, className){ 
+    this.clearalert();
+    let div= document.createElement('div');
+    div.className  = className;
+    div.appendChild(document.createTextNode(message));
+    let container=document.querySelector('.searchContainer');
+    let search=document.querySelector('.search');
+    container.insertBefore(div, search);
+}
+clearalert(){
+    let currentalert=document.querySelector('.alert');
+    if(currentalert){
+        currentalert.remove();
+    }
+}
  
 }
