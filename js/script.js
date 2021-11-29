@@ -10,12 +10,12 @@ searchBtn.addEventListener('click',(e) => {
             //console.log(data);
             
             if( data.message == 'not found'){
-            // ui.showAlert("User not found!", "alert alert-danger");
+             ui.showAlert("User not found!", "alert alert-danger");
             }else{
              ui.showprofile(data);
             }
         })
     }else{
-           // ui.clearprofile();
+           ui.clearprofile();
     }
 });
